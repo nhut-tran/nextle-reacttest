@@ -18,18 +18,18 @@ npm run start
 ### Mobile
 ![image](https://github.com/user-attachments/assets/26121fcd-4ecc-48c0-8d24-3160e57328f8)
 
-##Login Page
-###DeskTop
+## Login Page
+### DeskTop
 ![image](https://github.com/user-attachments/assets/5e44dbee-262d-4869-9fdd-a8b467e5c4aa)
 
-###Mobile
+### Mobile
 ![image](https://github.com/user-attachments/assets/d900d157-eefd-47c4-9813-24b008205115)
 
-##Dashboard
-###Desktop
+## Dashboard
+### Desktop
 ![image](https://github.com/user-attachments/assets/f2aeffcb-1906-41dd-883e-2b776e4c715d)
 
-###Mobile
+### Mobile
 ![image](https://github.com/user-attachments/assets/cd8e4260-e701-41dc-bc4c-82a2d6bcd318)
 
 
