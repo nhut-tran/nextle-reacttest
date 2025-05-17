@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import * as api from './authAPI';
 
 const initialState = {
-  user: null,
+  user: JSON.parse(localStorage.getItem('user') || null) || null,
   accessToken: localStorage.getItem('accessToken') || null,
   refreshToken: localStorage.getItem('refreshToken') || null,
   loading: false,
@@ -20,6 +20,7 @@ export const login = createAsyncThunk('auth/login', async ({ email, password }) 
   const res = await api.login({ email, password });
   localStorage.setItem('accessToken', res.accessToken);
   localStorage.setItem('refreshToken', res.refreshToken);
+  localStorage.setItem('user', JSON.stringify(res.user));
   return res;
 });
 
