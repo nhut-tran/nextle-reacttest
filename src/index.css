@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* overide defaut input style */
+.form-control:focus,
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #ced4da !important; /* neutral border */
+  box-shadow: none !important;
+  background-image: none !important; /* remove warning icon */
+}
+
+
+/* common styles */
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #888; /* subtle gray color for the text */
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.or-divider span {
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+  background-color: white; /* or whatever your background color is */
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+.required-label::after {
+  content: "*";
+  color: red;
+}
+
+.action-button {
+  background-color: #7367F0 !important;
+  border-color: #7367F0 !important;
+}
+
+.action-button:hover {
+  background-color: #5e50e6 !important;
+  border-color: #5e50e6 !important;
+}
+
+.action-link {
+  color: #7367F0 !important;
+  text-decoration: none;
+}
