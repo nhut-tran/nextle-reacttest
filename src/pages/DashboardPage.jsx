@@ -22,8 +22,8 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { user } = useSelector(state => state.auth);
-  //const toggleDropdown = () => setDropdownOpen((prevState) => !prevState);
 
+  console.log(user);
   const handleLogout = async () => {
     await dispatch(logout());
     navigate('/login');
@@ -43,7 +43,7 @@ const Dashboard = () => {
         </div>
         <Nav className="ms-auto d-flex align-items-center flex-row" navbar>
           <NavItem className="text-end me-3">
-            <div className="fw-medium small">{user?.name || 'John Doe'}</div>
+            <div className="fw-medium small">{`${user.firstName} ${user.lastName}`}</div>
             <div className="text-muted small">Available</div>
           </NavItem>
           <div className="position-relative" style={{ cursor: 'pointer' }} onClick={() => setDropdownOpen(!dropdownOpen)}>
